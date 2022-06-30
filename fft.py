@@ -23,5 +23,5 @@ def plot_magnitude_spectrum_new(signal, sr, filename, f_ratio=1):
     plt.plot(f[:f_bins], X_mag[:f_bins])
     plt.xlabel('Frequency (Hz)')
     plt.title(title)
-    plt.savefig('fft_graphs/'+filename +'.png')
-    return 'fft_graphs/'+filename +'.png'
+    plt.savefig(filename +'.png')
+    return filename +'.png'
